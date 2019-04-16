@@ -6,8 +6,7 @@
 
   <groupId>citrite</groupId>
   <artifactId>BRE-XML</artifactId>
-  <version>1.0.0</version>
-
+  <version>jboss-1.0.0</version> 
   <name>BRE XML</name>
   <url>http://www.redhat.com</url>
 
@@ -25,12 +24,18 @@
       <scope>test</scope>
     </dependency>
 <!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
-  <dependency>
+  <!--dependency>
       <groupId>javax.xml.bind</groupId>
       <artifactId>jaxb-api</artifactId>
       <version>2.3.0</version>
-  </dependency>
-  </dependencies>
+  </dependency-->
+<!-- https://mvnrepository.com/artifact/org.jboss.spec.javax.xml.bind/jboss-jaxb-api_2.3_spec -->
+   <dependency>
+      <groupId>org.jboss.spec.javax.xml.bind</groupId>
+      <artifactId>jboss-jaxb-api_2.3_spec</artifactId>
+      <version>1.0.1.Final</version>
+   </dependency>
+</dependencies>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
